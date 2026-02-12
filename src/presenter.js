@@ -1,4 +1,5 @@
 import sumar from "./sumador";
+import multiplicar from "./multiplicador";
 
 const first = document.querySelector("#primer-numero");
 const second = document.querySelector("#segundo-numero");
@@ -19,11 +20,11 @@ const secondM = document.querySelector("#segundo-numero-multiplicar");
 const formM = document.querySelector("#multiplicar-form");
 const divM = document.querySelector("#resultado-multiplicar-div");
 
-form.addEventListener("submit", (event) => {
+formM.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const firstNUmberM = Number.parseInt(firstNUmberM.value);
-  const secondNumberM = Number.parseInt(secondNumberM.value);
+  const firstNUmberM = Number.parseInt(firstM.value);
+  const secondNumberM = Number.parseInt(secondM.value);
 
-  div.innerHTML = "<p>" + multiplicar(firstM, secondM) + "</p>";
+  divM.innerHTML = "<p>" + multiplicar(firstNUmberM, secondNumberM) + "</p>";
 });
